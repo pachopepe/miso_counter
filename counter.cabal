@@ -1,0 +1,36 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 49e718059c5bc14888ec4ce3804fbe82cc76cc18b2c7452dbb479cf2ba642f71
+
+name:           counter
+version:        0.1.0
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  exposed-modules:
+      Counter
+  other-modules:
+      Paths_counter
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+    , miso
+  default-language: Haskell2010
+
+executable counter
+  main-is: Main.hs
+  other-modules:
+      Paths_counter
+  hs-source-dirs:
+      app
+  ghc-options: -Wall
+  build-depends:
+      base
+    , counter
+    , miso
+  default-language: Haskell2010

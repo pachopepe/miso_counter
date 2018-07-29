@@ -1,0 +1,19 @@
+---
+name:           counter
+version:        0.1.0
+
+ghc-options: -Wall
+
+library:
+  source-dirs: src
+
+dependencies:
+  - base
+  - miso
+
+executables:
+  counter:
+    main: Main.hs
+    source-dirs: app
+    dependencies:
+    - counter
